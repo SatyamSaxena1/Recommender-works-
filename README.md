@@ -41,12 +41,17 @@ This project implements a movie recommendation system that:
    pip install -r requirements.txt
    ```
 
-3. **Launch Jupyter Notebook**:
+3. **Test the installation** (optional but recommended):
+   ```bash
+   python test_notebook.py
+   ```
+
+4. **Launch Jupyter Notebook**:
    ```bash
    jupyter notebook
    ```
 
-4. **Open and run the notebook**:
+5. **Open and run the notebook**:
    - Open `This one works.ipynb` in Jupyter
    - Run all cells to download the dataset and build the recommendation system
 
@@ -108,7 +113,30 @@ After processing, the data includes:
 - **Ratings**: userId, movieId, rating, timestamp
 - **User-Item Matrix**: Sparse matrix for efficient similarity computation
 
+## Project Structure
+
+```
+Recommender-works-/
+├── This one works.ipynb    # Main Jupyter notebook with recommendation system
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+├── test_notebook.py       # Test script to validate functionality
+├── .gitignore            # Git ignore file
+└── .git/                 # Git repository data
+```
+
 ## Troubleshooting
+
+### Quick Testing
+Run the test script to check if everything is working:
+```bash
+python test_notebook.py
+```
+
+This will validate:
+- All dependencies are installed correctly
+- Data generation and processing works
+- Recommendation system functions properly
 
 ### Dataset Download Issues
 - Ensure you have internet connectivity
